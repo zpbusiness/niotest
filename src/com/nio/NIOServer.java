@@ -37,7 +37,7 @@ public class NIOServer {
 						client.register(selector, SelectionKey.OP_READ);
 					}else if (key.isValid()&&key.isReadable()) {
 						client = (SocketChannel)key.channel();
-						
+						//我修改一下
 						
 					}
 					
